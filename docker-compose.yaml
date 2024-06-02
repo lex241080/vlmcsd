@@ -1,0 +1,10 @@
+services:
+  app:
+    image: vlmcsd
+    build: .
+    network_mode: "bridge"
+    container_name: vlmcsd
+    restart: always
+
+    ports:
+      - 1688:1688/tcp
